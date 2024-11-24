@@ -1,7 +1,7 @@
 from classroom.asignatura import Asignatura
 
 class Grupo:
-    grado = 12
+    grado = "Grado 12"
 
     def __init__(self, grupo="grupo predeterminado", asignaturas=[], estudiantes=[]):
         self._grupo = grupo
@@ -20,7 +20,7 @@ class Grupo:
 
     def __str__(self):
         return "Grupo de estudiantes: "+ self._grupo
-
+    
     @ classmethod
     def asignarNombre(cls, nombre="Grado 10"):
         cls.grado = nombre
